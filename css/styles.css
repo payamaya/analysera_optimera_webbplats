@@ -179,9 +179,9 @@ main {
   min-height: auto;
   object-fit: cover;
 }
-.galleri-sektion {
+/* .galleri-sektion {
   padding: var(--avstand-md);
-}
+} */
 .galleri-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

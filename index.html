@@ -31,7 +31,44 @@
   <main class="main-index">
     <section class="hero-sektion">
       <h1 class="titel">Start Sida</h1>
-      <img src="assets/redigerad-bilder/header.png" alt="decorative bild">
+      <picture>
+        <!-- 320px -->
+        <source srcset="/assets/hero-optimerad-bilder/header-320.avif" media="(max-width: 320px)" type="image/avif"
+          width="320" height="110">
+        <source srcset="/assets/hero-optimerad-bilder/header-320.webp" media="(max-width: 320px)" type="image/webp"
+          width="320" height="110">
+
+        <!-- 375px -->
+        <source srcset="/assets/hero-optimerad-bilder/header-375.avif" media="(max-width: 375px)" type="image/avif"
+          width="375" height="129">
+        <source srcset="/assets/hero-optimerad-bilder/header-375.webp" media="(max-width: 375px)" type="image/webp"
+          width="375" height="129">
+
+        <!-- 425px (Denna kommer nu laddas på mobilen med 412px bredd!) -->
+        <source srcset="/assets/hero-optimerad-bilder/header-425.avif" media="(max-width: 425px)" type="image/avif"
+          width="425" height="164">
+        <source srcset="/assets/hero-optimerad-bilder/header-425.webp" media="(max-width: 425px)" type="image/webp"
+          width="425" height="164">
+
+        <!-- 768px -->
+        <source srcset="/assets/hero-optimerad-bilder/header-768.avif" media="(max-width: 768px)" type="image/avif"
+          width="768" height="263">
+        <source srcset="/assets/hero-optimerad-bilder/header-768.webp" media="(max-width: 768px)" type="image/webp"
+          width="768" height="263">
+
+        <!-- 1024px -->
+        <source srcset="/assets/hero-optimerad-bilder/header-1024.avif" media="(max-width: 1000px)" type="image/avif"
+          width="1024" height="350">
+        <source srcset="/assets/hero-optimerad-bilder/header-1024.webp" media="(max-width: 1000px)" type="image/webp"
+          width="1024" height="350">
+        <!-- Stora skärmar (>1000px) i moderna format -->
+        <source srcset="/assets/hero-optimerad-bilder/header-1920.avif" type="image/avif" width="1920" height="656">
+        <source srcset="/assets/hero-optimerad-bilder/header-1920.webp" type="image/webp" width="1920" height="656">
+        <!-- Fallback & Stora skärmar (>1000px) -->
+
+        <img src="assets/redigerad-bilder/header.png" alt="decorative bild" width="1920" height="656"
+          fetchpriority="high">
+      </picture>
     </section>
     <section class="galleri-sektion">
       <h2 class="main-andra-titel">Galleri</h2>
