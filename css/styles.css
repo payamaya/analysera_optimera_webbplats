@@ -1,0 +1,351 @@
+/* ANPASSA VARIABLER (Ska hämtas från Figma-designen) */
+:root {
+  /* Färger */
+
+  --primar-farg: #000000;
+  --nav-bakgrund: #00294d;
+  --sekundar-farg: #2f6981;
+  --bakgrund-farg: #001f3a;
+  --border-farg: #196273;
+  --text-farg: #ffffff;
+  --vit-farg: #000000;
+
+  --accent-farg: #0d4600;
+
+  /* AVSTÅND (Padding & Margin) */
+  --avstand-xs: 0.4rem;
+  --avstand-sm: 0.8rem;
+  --avstand-md: 1.6rem;
+  --avstand-l: 2.4rem;
+  --avstand-xl: 3.2rem;
+
+  --huvud-typsnitt: Arial, Helvetica, sans-serif;
+
+  --h1-clamp: clamp(3.2rem, 3vw, 4rem);
+  --h2-clamp: clamp(3rem, 2.8vw, 3.2rem);
+  --h3-clamp: clamp(2rem, 2.6vw, 2.4rem);
+  --h4-clamp: clamp(1.6rem, 2.4vw, 1.8rem);
+  --h5-clamp: clamp(1rem, 2vw, 1.4rem);
+}
+
+/* Nollställning av webbläsarens standardmarginaler */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--huvud-typsnitt, Arial, Helvetica, sans-serif);
+  font-size: 1.6rem;
+  background-color: var(--bakgrund-farg);
+  color: var(--text-farg);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TYPSNITT & RUBRIKER */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--huvud-typsnitt, Arial, Helvetica, sans-serif);
+  font-weight: 700;
+  color: var(--text-farg);
+  line-height: 1.2;
+}
+h1 {
+  font-size: var(--h1-clamp);
+}
+h2 {
+  font-size: var(--h2-clamp);
+}
+h3 {
+  font-size: var(--h3-clamp);
+}
+h4 {
+  font-size: var(--h4-clamp);
+}
+h5 {
+  font-size: var(--h5-clamp);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-farg);
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+span {
+  font-size: var(--avstand-md);
+  color: var(--accent-farg);
+  font-weight: 700;
+}
+input,
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+/* LAYOUT FÖR HUVUDINNEHÅLL */
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--avstand-md);
+  flex: 1;
+}
+/* Titel */
+.titel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: var(--text-farg);
+}
+
+.main-andra-titel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: var(--avstand-md);
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  margin-inline: var(--avstand-sm);
+  background-color: var(--nav-bakgrund);
+}
+.logo-sektion {
+  display: flex;
+  margin: auto 0;
+}
+.header-navigering {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.nav-meny-list {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-around;
+  font-size: var(--h4-clamp);
+}
+
+.nav-meny-list > li > a:hover {
+  color: var(--sekundar-farg);
+}
+
+/* Galleri */
+.hero-sektion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+.hero-sektion img {
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  max-height: 450px;
+  min-height: 200px;
+  object-fit: cover;
+}
+.galleri-sektion {
+  padding: var(--avstand-md);
+}
+.galleri-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--avstand-sm);
+}
+.galleri-wrapper img {
+  width: 100%;
+  height: 300px;
+  height: stretch;
+  height: -webkit-fill-available;
+  object-fit: cover;
+  border-radius: var(--avstand-sm);
+  display: block;
+}
+
+/* Beskrivning */
+.beskrivning {
+  display: flex;
+  flex-direction: column;
+  padding: var(--avstand-sm);
+}
+.beskrivning h3 {
+  margin-block: var(--avstand-md) var(--avstand-sm);
+}
+.beskrivning > p {
+  margin-top: var(--avstand-md);
+}
+
+/* Bildredigering - Före och efter */
+.main-redigering {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 5%;
+}
+.main-redigering h1,
+.main-redigering h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--avstand-xl);
+}
+
+.intro-text {
+  width: 100%;
+  display: flex;
+  margin-block: 2rem;
+  justify-content: center;
+}
+
+.jamforelse-kort {
+  padding: var(--avstand-md);
+  border-radius: var(--avstand-sm);
+  margin-bottom: var(--avstand-l);
+  box-shadow: 1px 2px 8px rgba(121, 162, 218, 0.08);
+}
+
+.jamforelse-kort h2 {
+  margin-bottom: 1rem;
+}
+
+/* Placerar original och redigerad bild bredvid varandra */
+.bild-par {
+  display: flex;
+  gap: var(--avstand-md);
+  margin-bottom: 1rem;
+}
+
+.bild-box {
+  flex: 1;
+  margin: 0;
+}
+
+.bild-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.bild-box figcaption {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: var(--h5-clamp);
+  color: var(--text-farg);
+}
+
+.forklaring-text {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-farg);
+  line-height: 1.6;
+}
+/* OM MIG */
+.main-om-mig h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--avstand-xl);
+}
+.om-mig-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--avstand-xl);
+  /* margin-top: var(--avstand-l); */
+  padding: var(--avstand-md);
+}
+
+.portrait-box img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%),
+    linear-gradient(to right, black 60%, transparent 100%),
+    linear-gradient(to left, black 80%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.om-mig-text {
+  max-width: 55ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--avstand-md);
+}
+/* FOOTER */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: var(--avstand-md);
+}
+
+/* Responsiv anpassning för mobil */
+@media (max-width: 700px) {
+  .bild-par {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .beskrivning {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .om-mig-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .om-mig-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .portrait-box img {
+    width: 100%;
+  }
+}
+@media (min-width: 781px) {
+  .portrait-box img {
+    width: 100%;
+  }
+}
