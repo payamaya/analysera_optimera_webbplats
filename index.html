@@ -73,9 +73,37 @@
     <section class="galleri-sektion">
       <h2 class="main-andra-titel">Galleri</h2>
       <div class="galleri-wrapper">
-        <img src="assets/redigerad-bilder/bilserie005.jpg" alt="Kat tår på ett bord">
+        <picture>
+          <!-- 320px (Minst först!) -->
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-320.avif" media="(max-width: 320px)"
+            type="image/avif" width="320" height="427">
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-320.webp" media="(max-width: 320px)"
+            type="image/webp" width="320" height="427">
 
-        <img src="assets/redigerad-bilder/bilserie018.jpg " alt=" en sjö med flera rådhus i olika färger i bakgrunder">
+          <!-- 425px -->
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-425.avif" media="(max-width: 425px)"
+            type="image/avif" width="425" height="567">
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-425.webp" media="(max-width: 425px)"
+            type="image/webp" width="425" height="567">
+
+          <!-- 768px -->
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-768.avif" media="(max-width: 768px)"
+            type="image/avif" width="768" height="1025">
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-768.webp" media="(max-width: 768px)"
+            type="image/webp" width="768" height="1025">
+
+          <!-- 1024px -->
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-1024.avif" media="(min-width: 1024px)"
+            type="image/avif" width="1024" height="1366">
+          <source srcset="/assets/kat-optimerad-bilder/bilserie005-1024.webp" media="(min-width: 1024px)"
+            type="image/webp" width="1024" height="1366">
+
+          <!-- Fallback & Stora skärmar (>1024px) -->
+          <img src="/assets/redigerad-bilder/bilserie005.jpg" alt="Katt står på ett bord" width="1999" height="2666"
+            fetchpriority="high">
+        </picture>
+
+        <!-- <img src="assets/redigerad-bilder/bilserie018.jpg " alt=" en sjö med flera rådhus i olika färger i bakgrunder">
 
         <img src="assets/redigerad-bilder/bilserie012.jpg" alt="Hund ligger på golvet bra huvudet övre kroppen synlig">
 
@@ -83,7 +111,7 @@
 
         <img src="assets/redigerad-bilder/bilserie014.jpg" alt="Detalj av en kyrkobyggnad med kupol">
 
-        <img src="assets/redigerad-bilder/bilserie015.jpg" alt="Bergsklättrare på snöig klippa svartsvitt">
+        <img src="assets/redigerad-bilder/bilserie015.jpg" alt="Bergsklättrare på snöig klippa svartsvitt"> -->
 
       </div>
     </section>
