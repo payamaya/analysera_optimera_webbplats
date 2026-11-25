@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
   <link rel="icon" href="assets/favicon_io/favicon.ico">
+  <link rel="preload" href="/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="css/styles.css">
   <title>Startsida</title>
 </head>
@@ -31,20 +32,20 @@
   <main class="main-index">
     <section class="hero-sektion">
       <h1 class="titel">Start Sida</h1>
-      <picture>
+      <picture class="wrapper">
         <!-- 1. AVIF med alla storlekar -->
         <source type="image/avif" srcset="/assets/hero-optimerad-bilder/header-320.avif 320w,
                     /assets/hero-optimerad-bilder/header-375.avif 375w,
                     /assets/hero-optimerad-bilder/header-425.avif 425w,
                     /assets/hero-optimerad-bilder/header-768.avif 768w,
-                    /assets/hero-optimerad-bilder/header-1024.avif 1024w" sizes="(max-width:1920px) 100vw, 50vw">
+                    /assets/hero-optimerad-bilder/header-1024.avif 1024w" sizes="(max-width:1920px) 96vw, 48vw">
 
         <!-- 2. WebP med alla storlekar -->
         <source type="image/webp" srcset="/assets/hero-optimerad-bilder/header-320.webp 320w,
                     /assets/hero-optimerad-bilder/header-375.webp 375w,
                     /assets/hero-optimerad-bilder/header-425.webp 425w,
                      /assets/hero-optimerad-bilder/header-1920.webp 768w,
-                    /assets/hero-optimerad-bilder/header-1024.webp 1024w" sizes=" (max-width:768px) 100vw, 50vw">
+                    /assets/hero-optimerad-bilder/header-1024.webp 1024w" sizes=" (max-width:768px) 96vw, 48vw">
         <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
 
         <img src="assets/redigerad-bilder/header.png" alt="decorative bild" width="1920" height="656"
@@ -62,7 +63,7 @@
           /assets/kat-optimerad-bilder/bilserie005-425.avif 425w,
           /assets/kat-optimerad-bilder/bilserie005-768.avif 768w,
           /assets/kat-optimerad-bilder/bilserie005-1024.avif 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="
@@ -70,7 +71,7 @@
                       /assets/kat-optimerad-bilder/bilserie005-425.webp 425w,
                       /assets/kat-optimerad-bilder/bilserie005-768.webp 768w,
                       /assets/kat-optimerad-bilder/bilserie005-1024.webp 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
           <img src="/assets/redigerad-bilder/bilserie005.jpg" alt="Katt står på ett bord" width="1999" height="2666"
@@ -85,7 +86,7 @@
                         /assets/radhus-optimerad-bilder/bilserie018-425.avif 425w,
                         /assets/radhus-optimerad-bilder/bilserie018-768.avif 768w,
                         /assets/radhus-optimerad-bilder/bilserie018-1024.avif 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="
@@ -94,7 +95,7 @@
                                     /assets/radhus-optimerad-bilder/bilserie018-425.webp 425w,
                                     /assets/radhus-optimerad-bilder/bilserie018-768.webp 768w,
                                     /assets/radhus-optimerad-bilder/bilserie018-1024.webp 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
           <img src="assets/redigerad-bilder/bilserie018.jpg" alt=" en sjö med flera rådhus i olika färger i bakgrunder"
             width="1683" height="969" loading="lazy">
         </picture>
@@ -107,7 +108,7 @@
                   /assets/hund-optimerad-bilder/bilserie012-768.avif 768w,
                   /assets/hund-optimerad-bilder/bilserie012-1024.avif 1024w,
                   /assets/hund-optimerad-bilder/bilserie012-1920.avif 1920w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="/assets/hund-optimerad-bilder/bilserie012-320.webp 320w,
@@ -116,11 +117,11 @@
                               /assets/hund-optimerad-bilder/bilserie012-768.webp 768w,
                               /assets/hund-optimerad-bilder/bilserie012-1024.webp 1024w,
                               /assets/hund-optimerad-bilder/bilserie012-1920.webp 1920w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
           <img src="assets/redigerad-bilder/bilserie012.jpg" alt="Hund ligger på golvet bra huvudet övre kroppen synlig"
-            width="2000" height="1500" loading="lazy">
+            width="2000" height="1480" loading="lazy">
         </picture>
         <!-- KAMPUS -->
         <picture>
@@ -131,7 +132,7 @@
                                 /assets/kampus-optimerad-bilder/bilserie016-768.avif 768w,
                                 /assets/kampus-optimerad-bilder/bilserie016-1024.avif 1024w,
                                 /assets/kampus-optimerad-bilder/bilserie016-1920.avif 1920w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="/assets/kampus-optimerad-bilder/bilserie016-320.webp 320w,
@@ -140,7 +141,7 @@
                                             /assets/kampus-optimerad-bilder/bilserie016-768.webp 768w,
                                             /assets/kampus-optimerad-bilder/bilserie016-1024.webp 1024w,
                                             /assets/kampus-optimerad-bilder/bilserie016-1920.webp 1920w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
           <img src="assets/redigerad-bilder/bilserie016.jpg" alt="En kampus bredvid liten flod" width="1996"
@@ -155,7 +156,7 @@
                           /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.avif 425w,
                           /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.avif 768w,
                           /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.avif 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="
@@ -164,7 +165,7 @@
                                       /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.webp 425w,
                                       /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.webp 768w,
                                       /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.webp 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
 
           <img src="assets/redigerad-bilder/bilserie014.jpg" alt="Detalj av en kyrkobyggnad med kupol" width="1332"
@@ -180,7 +181,7 @@
                                   /assets/berg-optimerad-bilder/bilserie015-425.avif 425w,
                                   /assets/berg-optimerad-bilder/bilserie015-768.avif 768w,
                                   /assets/berg-optimerad-bilder/bilserie015-1024.avif 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 2. WebP med alla storlekar -->
           <source type="image/webp" srcset="
@@ -189,7 +190,7 @@
                                               /assets/berg-optimerad-bilder/bilserie015-425.webp 425w,
                                               /assets/berg-optimerad-bilder/bilserie015-768.webp 768w,
                                               /assets/berg-optimerad-bilder/bilserie015-1024.webp 1024w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw">
+            sizes="(max-width: 768px) 96vw, (max-width: 1024px) 48vw">
 
           <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
           <img src="assets/redigerad-bilder/bilserie015.jpg" alt="Bergsklättrare på snöig klippa svartsvitt"
