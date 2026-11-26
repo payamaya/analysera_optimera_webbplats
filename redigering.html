@@ -36,27 +36,31 @@
           <!-- HUND REDIGERAT -->
           <picture>
             <!-- 1. AVIF med alla storlekar -->
-            <source type="image/avif" srcset="/assets/oredigerad-hund-bilder/bilserie012-320.avif 280w,
-                                    /assets/oredigerad-hund-bilder/bilserie012-375.avif 335w,
-                                    /assets/oredigerad-hund-bilder/bilserie012-425.avif 385w,
-                                    /assets/oredigerad-hund-bilder/bilserie012-768.avif 728w,
-                                    /assets/oredigerad-hund-bilder/bilserie012-1024.avif 984w,
+            <source type="image/avif" srcset="/assets/oredigerad-hund-bilder/bilserie012-320.avif 320w,
+                                    /assets/oredigerad-hund-bilder/bilserie012-375.avif 375w,
+                                    /assets/oredigerad-hund-bilder/bilserie012-425.avif 425w,
+                                    /assets/oredigerad-hund-bilder/bilserie012-768.avif 768w,
+                                    /assets/oredigerad-hund-bilder/bilserie012-1024.avif 1024w,
                                     /assets/oredigerad-hund-bilder/bilserie012-1920.avif 1880w"
               sizes="(max-width: 768px) 100vw, 50vw">
 
             <!-- 2. WebP med alla storlekar -->
-            <source type="image/webp" srcset="/assets/oredigerad-hund-bilder/bilserie012-320.webp 280w,
-                                                /assets/oredigerad-hund-bilder/bilserie012-375.webp 335w,
-                                                /assets/oredigerad-hund-bilder/bilserie012-425.webp 385w,
-                                                /assets/oredigerad-hund-bilder/bilserie012-768.webp 728w,
-                                                /assets/oredigerad-hund-bilder/bilserie012-1024.webp 984w,
+            <source type="image/webp" srcset="/assets/oredigerad-hund-bilder/bilserie012-320.webp 320w,
+                                                /assets/oredigerad-hund-bilder/bilserie012-375.webp 375w,
+                                                /assets/oredigerad-hund-bilder/bilserie012-425.webp 425w,
+                                                /assets/oredigerad-hund-bilder/bilserie012-768.webp 768w,
+                                                /assets/oredigerad-hund-bilder/bilserie012-1024.webp 1024w,
                                                 /assets/oredigerad-hund-bilder/bilserie012-1920.webp 1880w"
               sizes="(max-width: 768px) 100vw, 50vw">
 
             <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
             <img src="assets/oredigerad-hund-bilder/bilserie012-orginal.jpg"
-              alt="Hund ligger på golvet bra huvudet övre kroppen synlig" width="2000" height="1500"
-              fetchpriority="high">
+              alt="Hund ligger på golvet bra huvudet övre kroppen synlig" srcset="
+                        /assets/oredigerad-hund-bilder/bilserie012-320.jpg,
+                        /assets/oredigerad-hund-bilder/bilserie012-425.jpg,
+                        /assets/oredigerad-hund-bilder/bilserie012-768.jpg,
+                        /assets/oredigerad-hund-bilder/bilserie012-1024.jpg,
+                       " width="2000" height="1500" fetchpriority="high">
           </picture>
 
           <figcaption>Original Bild</figcaption>
@@ -65,26 +69,29 @@
           <!-- HUND REDIGERAT -->
           <picture>
             <!-- 1. AVIF med alla storlekar -->
-            <source type="image/avif" srcset="/assets/hund-optimerad-bilder/bilserie012-320.avif 280w,
-                              /assets/hund-optimerad-bilder/bilserie012-375.avif 335w,
-                              /assets/hund-optimerad-bilder/bilserie012-425.avif 385w,
-                              /assets/hund-optimerad-bilder/bilserie012-768.avif 728w,
-                              /assets/hund-optimerad-bilder/bilserie012-1024.avif 984w,
-                              /assets/hund-optimerad-bilder/bilserie012-1920.avif 1880w"
+            <source type="image/avif" srcset="/assets/hund-optimerad-bilder/bilserie012-320.avif 320w,
+                              /assets/hund-optimerad-bilder/bilserie012-375.avif 375w,
+                              /assets/hund-optimerad-bilder/bilserie012-425.avif 425w,
+                              /assets/hund-optimerad-bilder/bilserie012-768.avif 768w,
+                              /assets/hund-optimerad-bilder/bilserie012-1024.avif 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 2. WebP med alla storlekar -->
-            <source type="image/webp" srcset="/assets/hund-optimerad-bilder/bilserie012-320.webp 280w,
-                                          /assets/hund-optimerad-bilder/bilserie012-375.webp 335w,
-                                          /assets/hund-optimerad-bilder/bilserie012-425.webp 385w,
-                                          /assets/hund-optimerad-bilder/bilserie012-768.webp 728w,
-                                          /assets/hund-optimerad-bilder/bilserie012-1024.webp 984w,
-                                          /assets/hund-optimerad-bilder/bilserie012-1920.webp 1880w"
+            <source type="image/webp" srcset="/assets/hund-optimerad-bilder/bilserie012-320.webp 320w,
+                                          /assets/hund-optimerad-bilder/bilserie012-375.webp 375w,
+                                          /assets/hund-optimerad-bilder/bilserie012-425.webp 425w,
+                                          /assets/hund-optimerad-bilder/bilserie012-768.webp 768w,
+                                          /assets/hund-optimerad-bilder/bilserie012-1024.webp 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
-            <img src="assets/oredigerad-hund-bilder/bilserie012-redigerat.jpg"
-              alt="Hund ligger på golvet bra huvudet övre kroppen synlig" width="2000" height="1500" loading="lazy">
+            <img src="assets/redigerad-bilder/bilserie012.jpg"
+              alt="Hund ligger på golvet bra huvudet övre kroppen synlig" srcset="
+                        /assets/hund-optimerad-bilder/bilserie012-320.jpg,
+                        /assets/hund-optimerad-bilder/bilserie012-425.jpg,
+                        /assets/hund-optimerad-bilder/bilserie012-768.jpg,
+                        /assets/hund-optimerad-bilder/bilserie012-1024.jpg,
+                       " width="2000" height="1500" loading="lazy">
           </picture>
           <figcaption>Redigerad Bild</figcaption>
         </figure>
@@ -110,25 +117,30 @@
           <picture>
             <!-- 1. AVIF med alla storlekar -->
             <source type="image/avif" srcset="
-                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-320.avif 280w,
-                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-375.avif 335w,
-                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-425.avif 385w,
-                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-768.avif 728w,
-                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-1024.avif 984w"
+                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-320.avif 320w,
+                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-375.avif 375w,
+                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-425.avif 425w,
+                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-768.avif 768w,
+                                  /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-1024.avif 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 2. WebP med alla storlekar -->
             <source type="image/webp" srcset="
-                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-320.webp 280w,
-                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-375.webp 335w,
-                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-425.webp 385w,
-                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-768.webp 728w,
-                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-1024.webp 984w"
+                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-320.webp 320w,
+                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-375.webp 375w,
+                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-425.webp 425w,
+                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-768.webp 768w,
+                                              /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-1024.webp 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
 
-
-            <img src="assets/redigerad-bilder/bilserie014.jpg" alt="Detalj av en kyrkobyggnad med kupol" width="1332"
-              height="1776" loading="lazy">
+            <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
+            <img src="assets/oredigerad-kyrkobyggnad-bilder/bilserie014-orginal.jpg"
+              alt="Detalj av en kyrkobyggnad med kupol" srcset="
+                        /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-320.jpg,
+                        /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-425.jpg,
+                        /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-768.jpg,
+                        /assets/oredigerad-kyrkobyggnad-bilder/bilserie014-1024.jpg,
+                       " width="1332" height="1779" loading="lazy">
 
           </picture>
 
@@ -139,25 +151,29 @@
           <picture>
             <!-- 1. AVIF med alla storlekar -->
             <source type="image/avif" srcset="
-                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-320.avif 280w,
-                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-375.avif 335w,
-                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.avif 385w,
-                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.avif 728w,
-                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.avif 984w"
+                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-320.avif 320w,
+                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-375.avif 375w,
+                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.avif 425w,
+                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.avif 768w,
+                                  /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.avif 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 2. WebP med alla storlekar -->
             <source type="image/webp" srcset="
-                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-320.webp 280w,
-                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-375.webp 335w,
-                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.webp 385w,
-                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.webp 728w,
-                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.webp 984w"
+                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-320.webp 320w,
+                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-375.webp 375w,
+                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.webp 425w,
+                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.webp 768w,
+                                              /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.webp 1024w"
               sizes="(max-width: 768px) 100vw,  50vw">
+            <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
 
-
-            <img src="assets/redigerad-bilder/bilserie014.jpg" alt="Detalj av en kyrkobyggnad med kupol" width="1332"
-              height="1776" loading="lazy">
+            <img src="assets/redigerad-bilder/bilserie014.jpg" alt="Detalj av en kyrkobyggnad med kupol" srcset="
+                      /assets/kyrkobyggnad-optimerad-bilder/bilserie014-320.jpg,
+                      /assets/kyrkobyggnad-optimerad-bilder/bilserie014-425.jpg,
+                      /assets/kyrkobyggnad-optimerad-bilder/bilserie014-768.jpg,
+                      /assets/kyrkobyggnad-optimerad-bilder/bilserie014-1024.jpg,
+                     " width="1332" height="1776" loading="lazy">
 
           </picture>
           <figcaption>Redigerad Bild</figcaption>
@@ -202,8 +218,12 @@
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
-            <img src="/assets/oredigerad-kat-bilder/bilserie005-original-redigerat.jpg"
-              alt="Kat tår på ett bord med fägerad ögon" width="1999" height="2666" loading="lazy">
+            <img src="/assets/oredigerad-kat-bilder/bilserie005-original-oredigerat.jpg"
+              alt="Kat tår på ett bord med fägerad ögon" srcset="
+                    /assets/oredigerad-kat-bilder/bilserie005-320.jpg,
+                    /assets/oredigerad-kat-bilder/bilserie005-425.jpg,
+                    /assets/oredigerad-kat-bilder/bilserie005-768.jpg,
+                   " width="1999" height="2666" loading="lazy">
           </picture>
           <figcaption>Original Bild</figcaption>
         </figure>
@@ -226,8 +246,11 @@
               sizes="(max-width: 768px) 100vw,  50vw">
 
             <!-- 3. Fallback för äldre webbläsare (utan mellanslag i filnamnet!) -->
-            <img src="/assets/oredigerad-kat-bilder/bilserie005-original-oredigerat.jpg" alt="Katt står på ett bord"
-              width="1999" height="2666" loading="lazy">
+            <img src="/assets/redigerad-bilder/bilserie005.jpg" alt="Katt står på ett bord" srcset="
+                    /assets/kat-optimerad-bilder/bilserie005-320.jpg,
+                    /assets/kat-optimerad-bilder/bilserie005-425.jpg,
+                    /assets/kat-optimerad-bilder/bilserie005-768.jpg,
+                   " width="1999" height="2666" loading="lazy">
           </picture>
           <figcaption>Redigerad Bild</figcaption>
         </figure>
